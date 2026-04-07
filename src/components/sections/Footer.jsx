@@ -81,10 +81,10 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-[#333333] pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-[#666666]">
+          <p className="text-xs text-[#666666] shrink-0">
             © {new Date().getFullYear()} {meta.siteName}. All rights reserved.
           </p>
-          <p className="text-xs text-[#666666]">{meta.siteTagline}</p>
+          <p className="text-xs text-[#666666] sm:text-right">{meta.siteTagline}</p>
         </div>
       </div>
     </footer>

@@ -8,7 +8,7 @@ export const projects = [
     solution: 'Full brand system — logo, colors, type, guidelines',
     result: 'Professional market-ready presence',
     description: 'NEXTA came to us with a strong business model but no visual language to back it up. We conducted deep competitor research and stakeholder interviews to distill their core values into a visual system. The resulting identity — a bold logotype, a refined color palette of midnight navy and electric amber, and a comprehensive brand guidelines document — gave them instant credibility in a competitive market. Within three months of launch, NEXTA secured two major enterprise clients who cited the brand\'s professional appearance as a key factor in their decision.',
-    imageSlot: '/images/nexta-cover.jpg',
+    imageSlot: '/images/nexta-cover.svg',
     accentColor: '#1A1F4E',
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     solution: 'Scroll-stopping content system with brand rules',
     result: 'Consistent brand voice and measurable growth',
     description: 'Kabilife\'s social presence was fragmented — each post felt like it came from a different brand, diluting trust and suppressing algorithmic reach. We built a complete social media design system: custom templates for Reels covers, carousels, Stories, and promotional posts, all governed by a strict visual rulebook. The new system reduced content production time by 60% while improving brand recognition scores in user surveys. Engagement rates climbed 3.2x within 90 days of implementation as the algorithm rewarded the consistent, high-quality output.',
-    imageSlot: '/images/kabilife-cover.jpg',
+    imageSlot: '/images/kabilife-cover.svg',
     accentColor: '#2ECC71',
   },
   {
@@ -32,7 +32,7 @@ export const projects = [
     solution: 'Mobile-first redesign with structured user flows',
     result: 'Improved usability scores and conversion intent',
     description: 'Smart Healthy\'s existing website had a 78% mobile bounce rate and a checkout abandonment rate above industry average. We conducted usability testing with 12 real users, mapped friction points across the full journey, and rebuilt the interface from the ground up using mobile-first principles. Every screen was prototyped and validated before development, resulting in a clean, conversion-optimized UI that reduced task completion time by 45%. Post-launch usability scores improved from 52 to 87 on the System Usability Scale, and the redesigned product pages saw a measurable uplift in add-to-cart intent.',
-    imageSlot: '/images/smart-healthy-cover.jpg',
+    imageSlot: '/images/smart-healthy-cover.svg',
     accentColor: '#5A37EC',
   },
 ];

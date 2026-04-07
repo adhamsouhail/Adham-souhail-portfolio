@@ -48,15 +48,28 @@ export default function Portfolio() {
                 <div className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 lg:gap-16 items-center`}>
                   {/* Image Area */}
                   <div className="w-full lg:w-1/2">
-                    <div className={`rounded-2xl bg-[#F5F5F7] h-72 md:h-80 flex items-center justify-center overflow-hidden border border-[#EEEEEE] ${rotation}`}>
-                      <div className="text-center p-8">
-                        <div
-                          className="w-20 h-20 rounded-2xl mx-auto mb-4 flex items-center justify-center"
-                          style={{ backgroundColor: project.accentColor + '20' }}
-                        >
-                          <Icon name="grid" className="w-10 h-10" style={{ color: project.accentColor }} />
+                    <div className={`rounded-2xl overflow-hidden border border-[#EEEEEE] shadow-sm ${rotation}`}>
+                      <img
+                        src={project.imageSlot}
+                        alt={project.title}
+                        className="w-full h-72 md:h-80 object-cover"
+                        loading="lazy"
+                        decoding="async"
+                        onError={(e) => {
+                          e.target.style.display = 'none';
+                          e.target.nextSibling.style.display = 'flex';
+                        }}
+                      />
+                      <div className="hidden h-72 md:h-80 bg-[#F5F5F7] items-center justify-center">
+                        <div className="text-center p-8">
+                          <div
+                            className="w-20 h-20 rounded-2xl mx-auto mb-4 flex items-center justify-center"
+                            style={{ backgroundColor: project.accentColor + '20' }}
+                          >
+                            <Icon name="grid" className="w-10 h-10" style={{ color: project.accentColor }} />
+                          </div>
+                          <p className="text-sm text-muted font-medium">{project.category}</p>
                         </div>
-                        <p className="text-sm text-muted font-medium">{project.category}</p>
                       </div>
                     </div>
                   </div>

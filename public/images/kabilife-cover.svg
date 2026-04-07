@@ -1,0 +1,33 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#F0FDF4"/>
+  <circle cx="700" cy="100" r="200" fill="#2ECC71" fill-opacity="0.08"/>
+  <circle cx="100" cy="400" r="180" fill="#2ECC71" fill-opacity="0.05"/>
+  <!-- Instagram-style post mockup -->
+  <rect x="200" y="80" width="200" height="200" rx="12" fill="white" filter="drop-shadow(0 4px 16px rgba(0,0,0,0.08))"/>
+  <rect x="200" y="80" width="200" height="200" rx="12" fill="url(#grad1)"/>
+  <defs>
+    <linearGradient id="grad1" x1="200" y1="80" x2="400" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2ECC71" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#27AE60" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <text x="270" y="195" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800" fill="#2ECC71">K</text>
+  <!-- Second post -->
+  <rect x="420" y="120" width="180" height="180" rx="12" fill="white" filter="drop-shadow(0 4px 16px rgba(0,0,0,0.08))"/>
+  <rect x="428" y="148" width="164" height="8" rx="4" fill="#2ECC71" fill-opacity="0.3"/>
+  <rect x="428" y="164" width="130" height="6" rx="3" fill="#DDDDDD"/>
+  <rect x="428" y="178" width="150" height="6" rx="3" fill="#DDDDDD"/>
+  <rect x="428" y="210" width="164" height="60" rx="8" fill="#2ECC71" fill-opacity="0.08"/>
+  <text x="452" y="248" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#2ECC71">+3.2×</text>
+  <text x="452" y="266" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#666666">Engagement</text>
+  <!-- Brand name -->
+  <text x="200" y="330" font-family="Inter, system-ui, sans-serif" font-size="42" font-weight="800" fill="#111111">Kabilife</text>
+  <text x="200" y="360" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#666666" letter-spacing="2">SOCIAL MEDIA DESIGN SYSTEM</text>
+  <!-- Stats row -->
+  <rect x="200" y="388" width="100" height="48" rx="10" fill="#2ECC71" fill-opacity="0.1"/>
+  <text x="222" y="408" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#666666">Growth</text>
+  <text x="218" y="428" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#2ECC71">3.2×</text>
+  <rect x="312" y="388" width="100" height="48" rx="10" fill="#2ECC71" fill-opacity="0.1"/>
+  <text x="328" y="408" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#666666">Production</text>
+  <text x="324" y="428" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#2ECC71">−60%</text>
+</svg>

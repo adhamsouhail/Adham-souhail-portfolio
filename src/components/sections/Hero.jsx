@@ -10,7 +10,7 @@ const fadeUp = {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden pt-16 bg-white">
+    <section className="relative min-h-screen flex items-center pt-16 bg-white">
       {/* Background decoration */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 right-[10%] w-80 h-80 bg-accent opacity-[0.04] rounded-full blur-3xl" />
@@ -83,7 +83,7 @@ export default function Hero() {
 
           {/* Right Column — Device Mockup */}
           <motion.div
-            className="relative flex items-center justify-center min-h-[400px] lg:min-h-[520px]"
+            className="relative flex items-center justify-center min-h-[400px] lg:min-h-[540px] overflow-hidden"
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
@@ -128,13 +128,13 @@ export default function Hero() {
             </div>
 
             {/* Floating Available Badge */}
-            <div className="absolute top-4 left-0 lg:-left-4 bg-white border border-[#EEEEEE] rounded-xl px-4 py-2.5 shadow-lg flex items-center gap-2.5 animate-float z-20">
+            <div className="absolute top-6 left-2 bg-white border border-[#EEEEEE] rounded-xl px-4 py-2.5 shadow-lg flex items-center gap-2.5 animate-float z-20">
               <span className="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse-dot" />
               <span className="text-sm font-semibold text-dark">Available for Projects</span>
             </div>
 
             {/* Floating Stats Badge */}
-            <div className="absolute bottom-4 right-0 lg:-right-4 bg-white border border-[#EEEEEE] rounded-xl px-4 py-2.5 shadow-lg animate-float-delayed z-20">
+            <div className="absolute bottom-6 right-2 bg-white border border-[#EEEEEE] rounded-xl px-4 py-2.5 shadow-lg animate-float-delayed z-20">
               <div className="text-lg font-bold text-dark leading-none">30+</div>
               <div className="text-xs text-muted mt-0.5">Projects Delivered</div>
             </div>
