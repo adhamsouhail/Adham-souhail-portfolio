@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #5A37EC;
+  --accent-light: #EDE9FC;
+  --accent-dark: #4a2cd0;
+  --dark: #111111;
+  --muted: #888888;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Plus Jakarta Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #ffffff;
+  color: #111111;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulseDot {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.4); }
+}
+
+.section-padding {
+  padding: 96px 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 56px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-padding {
+    padding: 40px 0;
+  }
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hide scrollbar for horizontal scroll */
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Floating label styles */
+.floating-label-group {
+  position: relative;
+}
+
+.floating-label-group input,
+.floating-label-group select,
+.floating-label-group textarea {
+  border: none;
+  border-bottom: 1.5px solid #DDDDDD;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  padding: 20px 0 8px 0;
+  font-size: 15px;
+  color: #111111;
+  transition: border-color 200ms ease;
+}
+
+.floating-label-group input:focus,
+.floating-label-group select:focus,
+.floating-label-group textarea:focus {
+  border-bottom-color: #5A37EC;
+  box-shadow: 0 2px 0 -1px rgba(90,55,236,0.12);
+}
+
+.floating-label-group label {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  font-size: 15px;
+  color: #888888;
+  pointer-events: none;
+  transition: all 200ms ease;
+}
+
+.floating-label-group input:focus + label,
+.floating-label-group input:not(:placeholder-shown) + label,
+.floating-label-group select:focus + label,
+.floating-label-group select:not([value=""]) + label,
+.floating-label-group textarea:focus + label,
+.floating-label-group textarea:not(:placeholder-shown) + label {
+  top: 2px;
+  font-size: 11px;
+  color: #5A37EC;
+  letter-spacing: 0.05em;
+}
+
+.floating-label-group.has-error input,
+.floating-label-group.has-error textarea,
+.floating-label-group.has-error select {
+  border-bottom-color: #E24B4A;
+}
+
+.error-message {
+  font-size: 12px;
+  color: #E24B4A;
+  margin-top: 4px;
+  animation: slideDown 200ms ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Focus visible */
+*:focus-visible {
+  outline: 2px solid #5A37EC;
+  outline-offset: 2px;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  background: #5A37EC;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 0 0 8px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 9999;
+  transition: top 150ms;
+}
+.skip-link:focus {
+  top: 0;
+}
